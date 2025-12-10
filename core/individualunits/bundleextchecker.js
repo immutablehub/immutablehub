@@ -1,8 +1,8 @@
 import fs from "fs"
 
-function fileWithExtensionExists(extension) {
+function fileWithExtensionExists(extension,folder) {
   try {
-    const files = fs.readdirSync('.');
+    const files = fs.readdirSync(folder);
     const exists = files.some(fileName => 
       fileName.endsWith(extension)
     );
