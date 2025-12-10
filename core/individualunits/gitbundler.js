@@ -8,8 +8,8 @@ function gitBundler(FOLDER){
 
     let dynamicstring=crypto.randomUUID()
     let bpath=`${dynamicstring}.history.bundle`
-
-    if(fs.existsSync(bpath)) {
+    let patternexists=fileWithExtensionExists(".history.bundle");
+    if(patternexists) {
         console.log("path already exists")
     }
     else {
