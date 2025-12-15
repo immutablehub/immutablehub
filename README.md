@@ -1,24 +1,26 @@
 ## ImmutableHub  (Immutable Repository Infrastructure for the Next Era of Software)
 
-**ImmutableHub** is a decentralized code hosting service where repositories are permanently stored on-chain, ensuring tamper-proof, censorship-resistant, and verifiable software history.
+**ImmutableHub** is a decentralized code hosting service where repositories are permanently stored on decentralized and immutable storage, ensuring tamper-proof, censorship-resistant, and verifiable software history.
 
 ### Key Features
 
-**On-Chain Repository Storage**  
-  Every commit and version is anchored to the blockchain, guaranteeing immutability and verifiable provenance.
+**Decentralized Repository Storage**
 
-**Censorship-Resistant Hosting**  
-  No centralized party can modify, remove, or silently alter repositories.
+Every commit and data is stored in decentralized & immutable  storage  guaranteeing immutability and verifiable provenance.
+
+**Censorship-Resistant Hosting**
+
+No centralized party can modify, remove, or silently alter repositories.
 
 **Cryptographic Integrity**  
-  Code history is backed by cryptographic proofs rather than trust in a platform.
+Code history is backed by cryptographic proofs rather than trust in a platform.
 
 **Permanent Audit Trail**  
-  Developers, enterprises, and auditors get a traceable commit lineage that cannot be rewritten or force-pushed over.
+
+Developers, enterprises, and auditors get a traceable commit lineage that cannot be rewritten or force-pushed over.
 
 **Decentralized Access**  
-  Repos can be fetched and cloned
-
+Repos can be fetched and cloned
   
 
 ### Why It Matters
@@ -35,4 +37,4 @@
 
 ###  The Breakthrough
 
-By anchoring software to an immutable blockchain layer, it establishes a new security baseline for the entire software ecosystem.
+By anchoring software to an immutable & decentralized  layer, it establishes a new security baseline for the entire software ecosystem.
