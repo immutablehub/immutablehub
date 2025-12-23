@@ -38,6 +38,6 @@ async function Clone(folder){
 
           }}
 
-      await getFile(bundle)
+         await getFile(folder,bundle,pinata)
 
   }}
