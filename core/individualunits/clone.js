@@ -1,6 +1,9 @@
 
-async function Clone(folder){
+async function Clone(folder,pinata,client){
 
+
+    const db = client.db("ihub_db");
+    const coll = db.collection("ihub_col");
     
     const targetManifestId= fs.readFileSync(FILE_TO_STORE_LOGIN, 'utf8');
     const doc = await coll.findOne({
