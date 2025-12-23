@@ -1,6 +1,8 @@
-async function CloneNew(folder){
+async function CloneNew(folder,pinata,client){
 
     
+    const db = client.db("ihub_db");
+    const coll = db.collection("ihub_col");
     const targetManifestId= fs.readFileSync(FILE_TO_STORE_LOGIN,'utf8');
     const doc = await coll.findOne({
         "owner": "system",
@@ -29,7 +31,7 @@ async function CloneNew(folder){
   
     for(let obj of uploads){
 
-        await getFileNew(folder,obj)
+        await getFileNew(folder,obj,pinata)
        
     }
 
