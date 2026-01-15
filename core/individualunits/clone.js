@@ -1,14 +1,26 @@
+async function Clone(folder,pinata,client,mcp,prompt){
 
-async function Clone(folder,pinata,client){
-
-
-    const db = client.db("ihub_db");
-    const coll = db.collection("ihub_col");
     
-    const targetManifestId= fs.readFileSync(FILE_TO_STORE_LOGIN, 'utf8');
+ 
+      let db = client.db("ihub_db");
+      let coll = db.collection("ihub_col");
+
+        if (mcp ==true){
+
+            db = client.db("ihub_db");
+            coll = db.collection("mcp_registry");
+
+        }
+        else if(prompt ==true){
+            db = client.db("ihub_db");
+            coll = db.collection("prompt_comp");
+        }
+
+
+
+    const targetManifestId= fs.readFileSync(FILE_TO_STORE_LOGIN,'utf8');
     const doc = await coll.findOne({
         "owner": "system",
-        "manifests.id": targetManifestId 
     });
     if(doc) {
 
@@ -41,6 +53,8 @@ async function Clone(folder,pinata,client){
 
           }}
 
-         await getFile(folder,bundle,pinata)
+      await getFile(folder,bundle,pinata)
 
   }}
+
+  
