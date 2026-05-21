@@ -1,5 +1,14 @@
 ## ImmutableHub  (Immutable Repository Infrastructure for the Next Era of Software)
 
+
+[ImmutableHub X](https://x.com/ImmutableHub)
+[ImmutableHub NPM](https://www.npmjs.com/~immutablehub)
+
+
+
+
+
+
 **ImmutableHub** is a decentralized code hosting service where repositories are permanently stored on decentralized and immutable storage, ensuring tamper-proof, censorship-resistant, and verifiable software history.
 
 ### Key Features
